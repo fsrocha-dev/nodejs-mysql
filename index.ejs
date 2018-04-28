@@ -1,0 +1,22 @@
+<html>
+    <body>
+        <head>
+            <title>Feed de Notícias</title>
+        </head>
+        <h1><i>Ultimas Notícias</i></h1>
+        <table>
+            <tr>
+                <td>Código</td>
+                <td>Título</td>
+                <td>Resumo</td>
+            </tr>
+            <% for (var i = 0; i < noticias.length; i++){ %>
+            <tr>
+                <td><b><%= noticias[i].id_noticia  %></b></td>
+                <td><a href="#"><%= noticias[i].titulo  %></a></td>
+                <td><%= noticias[i].noticia %></td>
+            </tr>
+            <% } %>
+        </table>
+    </body>
+</html>
